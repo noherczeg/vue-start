@@ -1,0 +1,8 @@
+<div>
+    Some vue.js links.
+    <ul>
+        <li v-for='link in links'>
+            <a :href='link.url' target="_blank">{{link.title}}</a>
+        </li>
+    </ul>
+</div>

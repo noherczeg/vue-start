@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Vue - Start</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">VueStart</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto">
+                    <router-link tag="li" to="/">
+                        <a class="nav-link">Home</a>
+                    </router-link>
+                    <router-link tag="li" to="/links">
+                        <a class="nav-link">Links</a>
+                    </router-link>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main role="main">
+        <div class="container">
+            <router-view></router-view>
+        </div>
+    </main>
+</div>
+
+<script data-main="index" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.5/require.js"></script>
+</body>
+</html>
