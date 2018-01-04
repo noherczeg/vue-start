@@ -7,6 +7,7 @@ Just check out the repo, and open `index.html` in you browser!
 ## Motivation
 I wanted to try out an "architecture" where:
 - There is no build process
+- extensive usage of ES6
 - I have a viable view engine ([VueJS](https://vuejs.org/))
 - Everything important is lazy loaded ([RequireJS](http://requirejs.org/)), eg.: states, templates, etc...
 
